@@ -8,7 +8,7 @@ const nextConfig = {
         has: [
           {
             type: 'host',
-            value: 'visitapormexico.com',
+            value: 'www.visitapormexico.com',
           },
         ],
         destination: '/welcome/:path*',
@@ -19,7 +19,7 @@ const nextConfig = {
         has: [
           {
             type: 'host',
-            value: 'joobslot.com',
+            value: 'www.joobslot.com',
           },
         ],
         destination: '/jobs/:path*',
