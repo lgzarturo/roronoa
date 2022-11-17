@@ -10,10 +10,6 @@ const nextConfig = {
             type: 'host',
             value: 'visitapormexico.com',
           },
-          {
-            type: 'host',
-            value: 'www.visitapormexico.com',
-          },
         ],
         destination: '/welcome/:path*',
         permanent: true,
@@ -25,12 +21,13 @@ const nextConfig = {
             type: 'host',
             value: 'joobslot.com',
           },
-          {
-            type: 'host',
-            value: 'www.joobslot.com',
-          },
         ],
         destination: '/jobs/:path*',
+        permanent: true,
+      },
+      {
+        source: '/contact',
+        destination: 'https://twitter.com/lgzarturo',
         permanent: true,
       },
     ]
