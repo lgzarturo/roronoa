@@ -4,25 +4,25 @@ const nextConfig = {
   async redirects() {
     return [
       {
-        source: '/:path((?!welcome$).*)',
+        source: '/:path((?!welcome$).*)/:slug*',
         has: [
           {
             type: 'host',
             value: 'www.visitapormexico.com',
           },
         ],
-        destination: '/welcome',
+        destination: '/visitapormexico/:slug*',
         permanent: true,
       },
       {
-        source: '/:path((?!jobs$).*)',
+        source: '/:path((?!jobs$).*)/:slug*',
         has: [
           {
             type: 'host',
             value: 'www.joobslot.com',
           },
         ],
-        destination: '/jobs',
+        destination: '/joobslot/:slug*',
         permanent: true,
       },
       {
