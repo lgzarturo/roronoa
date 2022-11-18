@@ -11,7 +11,7 @@ const nextConfig = {
             value: 'www.visitapormexico.com',
           },
         ],
-        destination: '/web1',
+        destination: '/visitapormexico',
         permanent: true,
       },
       {

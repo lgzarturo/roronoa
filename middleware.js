@@ -3,8 +3,9 @@ import { NextRequest } from 'next/server'
 
 export function middleware(request) {
   const hostname = request.headers.get('host')
+  const path = request.nextUrl.pathname
 
-  if (hostname === 'www.joobslot.com') {
+  if (hostname === 'www.joobslot.com' && path === '/') {
     const url = request.nextUrl.clone()
     url.pathname = '/joobslot/7lJg2VkDEQ'
     return NextResponse.redirect(url)
